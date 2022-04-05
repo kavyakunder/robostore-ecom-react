@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { Navbar, Footer } from "./components/components";
 import Routes from "./routes/Routes";
 
