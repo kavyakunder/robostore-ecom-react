@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-dark);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.store-name {
+  margin: 0%;
+  font-size: 2rem;
+}
+
+/* main */
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px var(--cyan-900);
+}
+
+.title {
+  padding: 1rem;
+}
+
+.brand-name {
+  font-size: 4.5rem;
+}
+
+.brand-tagline {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.btn-shop {
+  font-size: 2.3rem;
+  background-color: var(--primary-color);
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+.shop-link {
+  text-decoration: none;
+  color: var(--secondary-dark);
+}
+
+/* brands */
+.brands-deals {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.brand-img {
+  height: 4rem;
+  width: 10rem;
+}
+
+.brands-deals img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+}
+
+/* categories */
+.top-categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.category-card {
+  width: 20rem;
+  height: 17rem;
+  margin: 2rem;
+  background-color: var(-white);
+  border: 2px solid var(--light-grey-border);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: scale(1.02);
+}
+
+.category-img {
+  height: 80%;
+}
+
+.category-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.category-card p {
+  font-size: 1.3rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 2rem;
+  text-transform: capitalize;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--secondary-dark);
+  color: var(--primary-color);
+}
+
+/* Hr */
+.horizontal-line {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+/* why robostore */
+.reason-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.why-robostore {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.reason-icon {
+  color: var(--primary-color);
+  padding: 0 15px;
+}
+
+.reason-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.reason-text {
+  color: var(--dark-grey);
+}
+
+.featured-card {
+  display: flex;
+  width: 20rem;
+  height: 10rem;
+  border: 2px solid var(--light-grey-border);
+  border-radius: 5px;
+}
+
+.featured-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avatar-img {
+  width: 45rem;
+  height: 45rem;
+}
+
+.avatar-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
