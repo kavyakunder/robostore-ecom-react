@@ -1,8 +1,10 @@
 import React from "react";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import HandshakeIcon from "@mui/icons-material/Handshake";
-import PaymentIcon from "@mui/icons-material/Payment";
+import {
+  PaymentIcon,
+  WhatsAppIcon,
+  HandshakeIcon,
+  LocalShippingIcon,
+} from "./icons";
 import "../landingPage.css";
 
 function Reason() {
