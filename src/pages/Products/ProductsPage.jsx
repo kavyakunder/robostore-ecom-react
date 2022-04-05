@@ -11,7 +11,6 @@ import {
 } from "../../utilities/filterFunctions";
 
 export default function ProductsPage() {
-  console.log("pro", ProductList);
   const { state, dispatch } = useProduct();
   const filteredPrice = filteredPriceProducts(state.products, state.price);
   const filteredCategory = filteredCategoryProducts(
