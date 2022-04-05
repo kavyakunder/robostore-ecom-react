@@ -22,9 +22,7 @@ function ProductList({ products }) {
                 return <ProductCard product={item} key={item._id} />;
               })
             ) : (
-              <p className="alert-container alert-error txt-medium">
-                No Products Found
-              </p>
+              <h2>No Products found</h2>
             )}
           </div>
         </div>
