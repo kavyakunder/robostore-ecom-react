@@ -31,8 +31,6 @@ export default function ProductsPage() {
           data: { products },
         } = await axios.get("/api/products");
         dispatch({ type: "INITIAL_PRODUCTS", payload: products });
-        console.log("products is", products);
-        console.log("data is", data);
       } catch (error) {
         console.log("error is", error);
       }
