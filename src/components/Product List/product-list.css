@@ -58,15 +58,6 @@
   align-items: flex-end;
   justify-content: space-between;
 }
-/* .btn-add-cart {
-  border-radius: 10px;
-  border: none;
-  padding: 0.9rem;
-  line-height: 12px;
-  font-size: 1.05rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-dark);
-} */
 
 .card-img {
   position: absolute;
