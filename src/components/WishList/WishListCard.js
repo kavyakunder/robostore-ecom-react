@@ -9,7 +9,7 @@ function WishListCard({ product }) {
     <>
       <div className="wishlist-card" id={_id}>
         <div className="container-img">
-          <img className="wishlist-img" src={img} alt="product" />
+          <img className="wishlist-img" src={img} alt={name} />
           <i className="fas fa-heart fa-2x heart"></i>
         </div>
         <h3 className="wishlist-title">{name}</h3>
