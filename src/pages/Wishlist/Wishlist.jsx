@@ -11,9 +11,7 @@ function Wishlist() {
       <div class="wishlist-container">
         {wishState.wishlist.length === 0 ? (
           <main className="wishlist-container page-container">
-            <div className="alert-container alert-error txt-normal">
-              Your Wishlist is empty!
-            </div>
+            Your Wishlist is empty!
           </main>
         ) : (
           <main className="wishlist-container">
