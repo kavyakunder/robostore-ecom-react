@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -24,9 +25,9 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="link-undecorated" href="./product-page.html">
-                Shop{" "}
-              </a>
+              <Link className="link-undecorated" to="/products">
+                Shop
+              </Link>
             </li>
             <li>
               <a className="link-undecorated" href="./login.html">
@@ -34,9 +35,9 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <a href="./wishlist.html">
+          <Link to="/wishlist">
             <FavoriteBorderIcon className="icon-style"></FavoriteBorderIcon>
-          </a>
+          </Link>
           <a href="./cart-management.html">
             <ShoppingCartIcon className="icon-style" />
           </a>
