@@ -20,9 +20,9 @@ function Navbar() {
         <div className="nav-items">
           <ul>
             <li>
-              <a className="link-undecorated" href="./index.html">
+              <Link className="link-undecorated" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <Link className="link-undecorated" to="/products">
@@ -38,9 +38,9 @@ function Navbar() {
           <Link to="/wishlist">
             <FavoriteBorderIcon className="icon-style"></FavoriteBorderIcon>
           </Link>
-          <a href="./cart-management.html">
+          <Link to="/cart">
             <ShoppingCartIcon className="icon-style" />
-          </a>
+          </Link>
           <a href="./logout.html">
             <LogoutIcon className="icon-style" />
           </a>
