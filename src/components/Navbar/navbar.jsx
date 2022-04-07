@@ -30,9 +30,9 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a className="link-undecorated" href="./login.html">
+              <Link className="link-undecorated" to="/login">
                 Login
-              </a>
+              </Link>
             </li>
           </ul>
           <Link to="/wishlist">
@@ -41,9 +41,9 @@ function Navbar() {
           <Link to="/cart">
             <i className="navbar-icons fas fa-shopping-cart fa-lg"></i>
           </Link>
-          {/* <Link to="/logout">
+          <Link to="/logout">
             <i class="navbar-icons fas fa-sign-out-alt fa-lg"></i>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </nav>
