@@ -9,7 +9,7 @@ const url = "assets/images/product/";
 export const products = [
   {
     _id: uuid(),
-    name: "Breadboard Circuit Test Board",
+    name: "Solderless Breadboard",
     price: 65,
     img: `${url}breadboard1.png`,
     category: "Breadboard",
