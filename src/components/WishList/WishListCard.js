@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useWishlist } from "../../contexts/wishlist-context";
+import { useCart } from "../../contexts/cart-context";
 
 function WishListCard({ product }) {
   const { _id, name, price, img } = product;
 
   const { wishDispatch } = useWishlist();
+  const { cartState, cartDispatch } = useCart();
+
   return (
     <>
       <div className="wishlist-card" id={_id}>
@@ -16,7 +20,21 @@ function WishListCard({ product }) {
         <h2 className="wishlist-price">₹{price}</h2>
 
         <div className="btn-add">
-          <button className="add-cart">Add To Cart</button>
+          {cartState.cart.find((item) => item._id === _id) ? (
+            <Link to="/cart">
+              <button className="btn-add-cart">Go to Cart</button>
+            </Link>
+          ) : (
+            <button
+              className="btn-add-cart"
+              onClick={() =>
+                cartDispatch({ type: "ADD_TO_CART", payload: product })
+              }
+            >
+              <span>Add to Cart</span>
+            </button>
+          )}
+
           <button
             className="btn-trash"
             onClick={() =>
