@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import LogoutIcon from "@mui/icons-material/Logout";
+
 import "./navbar.css";
 
 function Navbar() {

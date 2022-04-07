@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  PaymentIcon,
-  WhatsAppIcon,
-  HandshakeIcon,
-  LocalShippingIcon,
-} from "./icons";
+
 import "../landingPage.css";
 
 function Reason() {
