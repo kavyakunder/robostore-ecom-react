@@ -36,14 +36,14 @@ function Navbar() {
             </li>
           </ul>
           <Link to="/wishlist">
-            <FavoriteBorderIcon className="icon-style"></FavoriteBorderIcon>
+            <i className="navbar-icons far fa-heart fa-lg"></i>
           </Link>
           <Link to="/cart">
-            <ShoppingCartIcon className="icon-style" />
+            <i className="navbar-icons fas fa-shopping-cart fa-lg"></i>
           </Link>
-          <a href="./logout.html">
-            <LogoutIcon className="icon-style" />
-          </a>
+          {/* <Link to="/logout">
+            <i class="navbar-icons fas fa-sign-out-alt fa-lg"></i>
+          </Link> */}
         </div>
       </div>
     </nav>
