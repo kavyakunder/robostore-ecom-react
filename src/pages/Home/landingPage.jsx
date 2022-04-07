@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./landingPage.css";
 import Reason from "./sub-components/reason";
 import TopCategories from "./sub-components/top-categories";
@@ -16,9 +17,9 @@ function Landing() {
           <h1 className="brand-name">RoboStore</h1>
           <h2 className="brand-tagline">We build because we can!</h2>
           <button className="btn-shop">
-            <a className="shop-link" href="./pages/product-page.html">
+            <Link className="shop-link" to="/products">
               Shop Now
-            </a>
+            </Link>
           </button>
         </div>
       </div>
