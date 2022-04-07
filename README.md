@@ -1,3 +1,14 @@
-## E-Commerce Backend
+## Robostore
 
-This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce; so that you can focus on building Frontend.
+RoboStore is a robotics products based ecommerce store built using React.
+
+## Features Present
+
+- Product Listing
+- Filter Products by
+  - Category
+  - Discount
+  - Price
+  - Rating
+- Cart Management
+- Wishlist Management
