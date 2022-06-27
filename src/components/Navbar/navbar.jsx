@@ -1,9 +1,14 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/auth-context";
+import { useWishlist } from "../../contexts/wishlist-context";
+import { useCart } from "../../contexts/cart-context";
 import "./navbar.css";
 import { toast } from "react-hot-toast";
+
 function Navbar() {
+  const { wishState } = useWishlist();
+  const { cartState } = useCart();
   const { auth, setAuth } = useAuth();
   const redirect = useNavigate();
 
@@ -46,10 +51,22 @@ function Navbar() {
           {auth.isAuth === true ? (
             <>
               <Link to="/wishlist">
-                <i className="navbar-icons far fa-heart fa-lg"></i>
+                <div>
+                  <i className="navbar-icons far fa-heart fa-lg sup-num">
+                    {wishState.wishlist.length > 0 ? (
+                      <span className="the-number">
+                        {wishState.wishlist.length}
+                      </span>
+                    ) : null}
+                  </i>
+                </div>
               </Link>
               <Link to="/cart">
-                <i className="navbar-icons fas fa-shopping-cart fa-lg"></i>
+                <i className="navbar-icons fas fa-shopping-cart fa-lg sup-num">
+                  {cartState.cart.length > 0 ? (
+                    <span className="the-number">{cartState.cart.length}</span>
+                  ) : null}
+                </i>
               </Link>
               <Link to="/" onClick={() => signoutAuth(setAuth)}>
                 <i class="navbar-icons fas fa-sign-out-alt fa-lg"></i>

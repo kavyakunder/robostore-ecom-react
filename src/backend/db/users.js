@@ -18,7 +18,7 @@ export const users = [
     address: [
       {
         _id: uuid(),
-        name: "Rutuja Shrivastav",
+        name: "Kavya Kunder",
         email: "demonslayer@gmail.com",
         street: "Major State Highway 6, Rajapeth",
         city: "Mumbai",

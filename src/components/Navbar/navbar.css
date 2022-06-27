@@ -44,3 +44,15 @@
   margin: 1rem;
   font-size: 2rem;
 }
+.sup-num {
+  position: relative;
+}
+.the-number {
+  position: absolute;
+  top: 5%;
+  right: 1px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  font-size: x-large;
+}

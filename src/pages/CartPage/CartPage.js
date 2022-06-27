@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartCard from "../../components/Cart/CartCard";
 import CartPrice from "../../components/Cart/CartPrice";
+import { Footer } from "../../components/components";
 import { useCart } from "../../contexts/cart-context";
 import "./cart-page.css";
 

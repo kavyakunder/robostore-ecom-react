@@ -5,7 +5,7 @@ import Reason from "./sub-components/reason";
 import TopCategories from "./sub-components/top-categories";
 import Brands from "./sub-components/brands";
 import FeaturedProducts from "./sub-components/feature-product";
-
+import { Footer } from "../../components/components";
 function Landing() {
   return (
     <section>
@@ -27,6 +27,7 @@ function Landing() {
       <TopCategories />
       <Brands />
       <FeaturedProducts />
+      <Footer />
     </section>
   );
 }

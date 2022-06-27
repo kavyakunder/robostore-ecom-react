@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useProduct } from "../../contexts/product-context";
 import ProductList from "../../components/Product List/ProductList";
-
+import { Footer } from "../../components/components";
 import "./products-page.css";
 import {
   filteredCategoryProducts,
@@ -38,6 +38,7 @@ export default function ProductsPage() {
   return (
     <>
       <ProductList products={finalProducts} />
+      <Footer />
     </>
   );
 }
