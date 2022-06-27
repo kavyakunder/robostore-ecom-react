@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "../../contexts/cart-context";
+import { Link } from "react-router-dom";
 
 function CartPrice() {
   const { cartState } = useCart();
@@ -30,7 +31,9 @@ function CartPrice() {
             <td className="total">₹{Math.round(itemsPrice + shippingPrice)}</td>
           </tr>
         </table>
-        <button className="btn-checkout">Proceed to checkout</button>
+        <Link to="/checkout">
+          <button className="btn-checkout">Proceed to checkout</button>
+        </Link>
       </div>
     </>
   );
