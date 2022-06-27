@@ -11,9 +11,6 @@ function ProductList({ products }) {
         <div className="category-navbar">
           <div className="category-bar">
             Showing {products.length} out of 15 results
-            <div className="sort-by">
-              <p>Sort by:</p>
-            </div>
           </div>
           <div className="container">
             {console.log("products is", products)}

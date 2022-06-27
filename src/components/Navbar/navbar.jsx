@@ -1,9 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/auth-context";
 import "./navbar.css";
-
+import { toast } from "react-hot-toast";
 function Navbar() {
+  const { auth, setAuth } = useAuth();
+  const redirect = useNavigate();
+
+  const signoutAuth = (setAuth) => {
+    localStorage.removeItem("AUTH_TOKEN");
+    localStorage.removeItem("username");
+    setAuth(() => ({
+      isAuth: false,
+      token: null,
+      user: "",
+    }));
+    toast.success("Logout succesful");
+    redirect("/");
+  };
+
   return (
     <nav>
       <div className="navbar">
@@ -27,21 +42,24 @@ function Navbar() {
                 Shop
               </Link>
             </li>
-            <li>
-              <Link className="link-undecorated" to="/login">
-                Login
-              </Link>
-            </li>
           </ul>
-          <Link to="/wishlist">
-            <i className="navbar-icons far fa-heart fa-lg"></i>
-          </Link>
-          <Link to="/cart">
-            <i className="navbar-icons fas fa-shopping-cart fa-lg"></i>
-          </Link>
-          <Link to="/logout">
-            <i class="navbar-icons fas fa-sign-out-alt fa-lg"></i>
-          </Link>
+          {auth.isAuth === true ? (
+            <>
+              <Link to="/wishlist">
+                <i className="navbar-icons far fa-heart fa-lg"></i>
+              </Link>
+              <Link to="/cart">
+                <i className="navbar-icons fas fa-shopping-cart fa-lg"></i>
+              </Link>
+              <Link to="/" onClick={() => signoutAuth(setAuth)}>
+                <i class="navbar-icons fas fa-sign-out-alt fa-lg"></i>
+              </Link>
+            </>
+          ) : (
+            <Link className="link-undecorated" to="/login">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>
