@@ -13,6 +13,7 @@ export const products = [
     price: 65,
     img: `${url}breadboard1.png`,
     category: "Breadboard",
+    info: "Used to prototype circuits without the requirement of PCB",
   },
   {
     _id: uuid(),
@@ -20,6 +21,7 @@ export const products = [
     price: 285,
     img: `${url}pcb1.png`,
     category: "Breadboard",
+    info: "Used to mechanically support and electrically connect electronic components ",
   },
   {
     _id: uuid(),
@@ -27,6 +29,7 @@ export const products = [
     price: 29,
     img: `${url}minibreadb.png`,
     category: "Breadboard",
+    info: "Mini size pcb used in smaller circuits to avoid confusion",
   },
   {
     _id: uuid(),
@@ -34,6 +37,7 @@ export const products = [
     price: 650,
     img: `${url}arduino-board.jpg`,
     category: "Arduino",
+    info: "Arduino boards are ideal for electronics and computer enthusiasts.",
   },
   {
     _id: uuid(),

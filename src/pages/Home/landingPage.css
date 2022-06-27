@@ -159,12 +159,14 @@ footer {
 
 .featured-card {
   display: flex;
-  width: 20rem;
+  width: 22rem;
   height: 10rem;
   border: 2px solid var(--light-grey-border);
   border-radius: 5px;
 }
-
+.name-category {
+  font-size: 1.6rem;
+}
 .featured-container {
   display: flex;
   justify-content: space-evenly;
