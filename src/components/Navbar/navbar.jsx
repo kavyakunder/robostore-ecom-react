@@ -10,7 +10,7 @@ function Navbar() {
         <div className="logo-title">
           <img
             className="navbar-logo"
-            src="assets/images/homepage/brand-logo.png"
+            src="assets/images/homepage/robostore-favicon.png"
             alt="brand-name"
           />
           <h3 className="store-name">RoboStore</h3>
