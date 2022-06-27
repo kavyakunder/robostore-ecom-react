@@ -8,6 +8,7 @@ import Login from "../pages/Authentication/Login/Login";
 // import Login from "../pages/Login/Login";
 import Logout from "../pages/Logout/Logout";
 import { PrivateRoutes } from "./PrivateRoutes";
+import { Checkout } from "../pages/Checkout/Checkout";
 export default function SiteRoutes() {
   return (
     <Routes>
@@ -16,6 +17,7 @@ export default function SiteRoutes() {
       <Route element={<PrivateRoutes />}>
         <Route path="/wishlist" element={<WishlistPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Route>
       <Route path="/mockman" element={<Mockman></Mockman>} />
       <Route path="/login" element={<Login />} />

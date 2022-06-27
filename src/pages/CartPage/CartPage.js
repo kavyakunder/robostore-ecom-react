@@ -4,6 +4,7 @@ import CartCard from "../../components/Cart/CartCard";
 import CartPrice from "../../components/Cart/CartPrice";
 import { useCart } from "../../contexts/cart-context";
 import "./cart-page.css";
+
 function CartPage() {
   const { cartState } = useCart();
   return (

@@ -15,5 +15,18 @@ export const users = [
     password: "adarshbalika",
     createdAt: formatDate(),
     updatedAt: formatDate(),
+    address: [
+      {
+        _id: uuid(),
+        name: "Rutuja Shrivastav",
+        email: "demonslayer@gmail.com",
+        street: "Major State Highway 6, Rajapeth",
+        city: "Mumbai",
+        state: "Maharashtra",
+        zipcode: "444605",
+        country: "India",
+        mobile: "9255506504",
+      },
+    ],
   },
 ];

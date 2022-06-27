@@ -20,6 +20,11 @@
   background-color: var(--primary-color);
   color: var(--secondary-dark);
 }
+.btn-add-cart:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #0891b2;
+}
 
 .card-img {
   position: absolute;
